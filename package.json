@@ -1,0 +1,26 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "A browser start page",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync public -s",
+    "watch": "browser-sync public -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spncrhrstn/start.git"
+  },
+  "keywords": [
+    "startpage"
+  ],
+  "author": "spncrhrstn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spncrhrstn/start/issues"
+  },
+  "homepage": "https://github.com/spncrhrstn/start#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}
