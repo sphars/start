@@ -1,6 +1,8 @@
+@import "nord.css";
+
 /* Variables */
 :root{
-    --font-family: 'Segoe UI', Arial, sans-serif;
+    --font-family: 'Segoe UI', Arial, sans-serif;    
 }
 
 /* Reset some styles */
@@ -22,6 +24,8 @@ html, body{
 /* Layout */
 body{
     font-family: var(--font-family);
+    background-color: var(--nord6);
+    color:var(--nord0)
 }
 
 .container{
@@ -48,6 +52,8 @@ body{
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark){
-    :root{
+    body{
+        background:var(--nord0);
+        color: var(--nord6);
     }
 }
