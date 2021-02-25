@@ -2,7 +2,7 @@
 
 /* Variables */
 :root{
-    --font-family: 'Segoe UI', Arial, sans-serif;    
+    --font-family: Roboto, 'Segoe UI', Arial, sans-serif;    
 }
 
 /* Reset some styles */
@@ -25,11 +25,15 @@ html, body{
 body{
     font-family: var(--font-family);
     background-color: var(--nord6);
-    color:var(--nord0)
+    color:var(--nord0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container{
-    height: 100%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,9 +43,25 @@ body{
     margin: 1rem;
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .icon{
+    margin: .5rem;
+    stroke: var(--nord2);
+}
+
 /* Helpers */
 .text-center{
     text-align: center;
+}
+
+.debug{
+    /* border: 1px solid red; */
 }
 
 /* Content */
@@ -54,6 +74,14 @@ body{
 @media (prefers-color-scheme: dark){
     body{
         background:var(--nord0);
-        color: var(--nord6);
+        color: var(--nord5);
+    }
+
+    footer{
+        color: var(--nord8);
+    }
+
+    footer .icon{
+        stroke: var(--nord10);
     }
 }
