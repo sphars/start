@@ -52,7 +52,12 @@ footer{
 
 footer .icon{
     margin: .5rem;
-    stroke: var(--nord2);
+    stroke: var(--nord3);
+    cursor: pointer;
+}
+
+footer .icon:hover{
+    stroke: var(--nord9);
 }
 
 /* Helpers */
@@ -65,7 +70,7 @@ footer .icon{
 }
 
 /* Content */
-.greeting{
+#greeting{
     font-size: 2rem;
     margin: .5rem 0;
 }
@@ -83,5 +88,9 @@ footer .icon{
 
     footer .icon{
         stroke: var(--nord10);
+    }
+
+    footer .icon:hover{
+        stroke: var(--nord5);
     }
 }
