@@ -75,6 +75,35 @@ footer .icon:hover{
     margin: .5rem 0;
 }
 
+#bookmarks{
+    border: 1px solid yellow;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+
+.bookmark-group{
+    border: 1px solid red;
+    margin: .5rem 1rem;
+    padding: .5rem;
+    width: 200px;
+}
+
+.bookmark-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.bookmark-category{
+    font-weight: bold;
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark){
     body{
