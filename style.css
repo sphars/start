@@ -65,34 +65,57 @@ footer .icon:hover{
     text-align: center;
 }
 
-.debug{
-    /* border: 1px solid red; */
-}
-
 /* Content */
-#greeting{
+#message{
     font-size: 2rem;
     margin: .5rem 0;
 }
 
 #bookmarks{
-    border: 1px solid yellow;
+}
+
+#bookmarks-container{
+    /* border: 1px solid yellow; */
+    
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.bookmark-item{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    align-items: center;
+    padding: .5em;
+    border: 1px solid var(--nord2);
+    border-radius: 8px;
+}
 
-    align-items: stretch;
-    align-content: stretch;
+.bookmark-icon{
+    height: 64px;
+    margin: 0 1em;
+}
+
+.bookmark-text{
+    flex-grow: 1;
+}
+
+.bookmark-title{
+    font-weight: bold;
+}
+
+.bookmark-address{
 }
 
 
 .bookmark-group{
     border: 1px solid red;
-    margin: .5rem 1rem;
     padding: .5rem;
-    width: 200px;
+    /* width: 300px; */
+    /* max-height: 300px; */
+    overflow-y: auto;
 }
 
 .bookmark-list{

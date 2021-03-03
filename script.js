@@ -2,7 +2,7 @@
 const searchBtn = document.getElementById('searchBtn');
 const settingsBtn = document.getElementById('settings');
 const weatherBtn = document.getElementById('weather');
-const greeting = document.getElementById('greeting');
+const message = document.getElementById('message');
 
 /* Functions */
 function getGreeting(){
@@ -41,5 +41,5 @@ weatherBtn.addEventListener('click', function(){
 document.addEventListener('DOMContentLoaded', function(){
     
     // update greeting
-    greeting.textContent = getGreeting();
+    message.textContent = getGreeting();
 });
