@@ -18,7 +18,6 @@ function getGreeting(){
         msg = "good evening";
     }
 
-    msg += " sir/madam";
     return msg;
 }
 
