@@ -88,14 +88,27 @@ footer .icon:hover{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding: .5em;
-    border: 1px solid var(--nord2);
-    border-radius: 8px;
+    padding: .5em .5em .5em 0;
+    border: 2px solid var(--nord2);
+    border-radius: 16px;
+
+    text-decoration: none;
+    color: var(--nord0);
+}
+
+.bookmark-item:hover{
+    color: var(--nord2);
+    background-color: var(--nord4);
 }
 
 .bookmark-icon{
-    height: 64px;
-    margin: 0 1em;
+    /* margin: 0 1em; */
+}
+
+.bookmark-icon .icon{
+    margin: .5em 1em;
+    height: 40px;
+    stroke: var(--nord3);
 }
 
 .bookmark-text{
@@ -131,7 +144,7 @@ footer .icon:hover{
 @media (prefers-color-scheme: dark){
     body{
         background:var(--nord0);
-        color: var(--nord5);
+        color: var(--nord4);
     }
 
     footer{
@@ -143,6 +156,20 @@ footer .icon:hover{
     }
 
     footer .icon:hover{
-        stroke: var(--nord5);
+        stroke: var(--nord4);
     }
+
+    .bookmark-item{
+        color:  var(--nord4);
+    }
+
+    .bookmark-item:hover{
+        background-color: var(--nord10);
+        color: var(--nord5);
+    }
+
+    .bookmark-icon .icon{
+        stroke: var(--nord9);
+    }
+
 }
