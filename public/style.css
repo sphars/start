@@ -78,7 +78,7 @@ footer .icon:hover{
 #searchbar{
     display: block;
     height: 36px;
-    width: min(100%, 300px);
+    width: min(100%, 400px);
     margin: 0 auto;
     padding: .5em 1rem;
     

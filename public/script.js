@@ -1,7 +1,7 @@
 /* Elements */
 const searchBar = document.getElementById('searchbar');
-const settingsBtn = document.getElementById('settings');
-const weatherBtn = document.getElementById('weather');
+// const settingsBtn = document.getElementById('settings');
+// const weatherBtn = document.getElementById('weather');
 const message = document.getElementById('message');
 
 /* Functions */
@@ -34,13 +34,13 @@ function search(event){
 
 /* Events */
 
-settingsBtn.addEventListener('click', function(){
-    alert('this does nothing');
-});
+// settingsBtn.addEventListener('click', function(){
+//     alert('this does nothing');
+// });
 
-weatherBtn.addEventListener('click', function(){
-    alert('this does nothing');
-});
+// weatherBtn.addEventListener('click', function(){
+//     alert('this does nothing');
+// });
 
 // run when document ready
 document.addEventListener('DOMContentLoaded', function(){
