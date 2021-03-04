@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Tab</title>
+    <title>new tab</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,169 +14,179 @@
     <div class="container">
 
         <div class="row" id="greeting">
-            <div class="text-center" id="message">good day sir/madam</div>
+            <div class="text-center" id="message"></div>
         </div>
 
         <div class="row" id="search">
-            <form class="text-center">
-                <input type="text" placeholder="search..." name="q" id="searchTerm" aria-label="Search">
-                <button id="searchBtn">go</button>
-            </form>
+            <input type="text" placeholder="search the internet ..." name="q" id="searchbar" aria-label="Search" autocomplete="off"
+                onkeydown="search(event)" autofocus>
         </div>
 
         <div class="row" id="bookmarks">
             <div class="" id="bookmarks-container">
-                <a class="bookmark-item" href="#">
+                <a class="bookmark-item" href="https://www.reddit.com/">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-reddit"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z" />
+                            <path d="M12 8l1 -5l6 1" />
+                            <circle cx="19" cy="4" r="1" />
+                            <circle cx="9" cy="13" r=".5" fill="currentColor" />
+                            <circle cx="15" cy="13" r=".5" fill="currentColor" />
+                            <path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 1</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">Reddit</div>
+                        <div class="bookmark-address">reddit.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://www.theverge.com">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-letter-v"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 4l6 16l6 -16" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 2</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">The Verge</div>
+                        <div class="bookmark-address">theverge.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://www.arstechnica.com">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-letter-a"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 20v-12a4 4 0 0 1 4 -4h2a4 4 0 0 1 4 4v12" />
+                            <line x1="7" y1="13" x2="17" y2="13" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 3</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">Ars Technica</div>
+                        <div class="bookmark-address">arstechnica.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://www.youtube.com">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="3" y="5" width="18" height="14" rx="4" />
+                            <path d="M10 9l5 3l-5 3z" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 4</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">YouTube</div>
+                        <div class="bookmark-address">youtube.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://news.ycombinator.com">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-ycombinator"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <path d="M8 7.002l4 5.998l4 -6" />
+                            <line x1="12" y1="17" x2="12" y2="13" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 5</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">Hacker News</div>
+                        <div class="bookmark-address">news.ycombinator.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://www.github.com">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 6</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">GitHub</div>
+                        <div class="bookmark-address">github.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://www.twitter.com">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 7</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">Twitter</div>
+                        <div class="bookmark-address">twitter.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://www.steampowered.com">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-steam"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M16.5 5a4.5 4.5 0 1 1 -.653 8.953l-4.347 3.009l0 .038a3 3 0 0 1 -2.824 2.995l-.176 .005a3.001 3.001 0 0 1 -2.94 -2.402l-2.56 -1.098v-3.5l3.51 1.755a2.989 2.989 0 0 1 2.834 -.635l2.727 -3.818a4.5 4.5 0 0 1 4.429 -5.302z" />
+                            <circle fill="currentColor" cx="16.5" cy="9.5" r="1" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 8</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">Steam</div>
+                        <div class="bookmark-address">steampowered.com</div>
                     </div>
                 </a>
-                <a class="bookmark-item">
+                <a class="bookmark-item" href="https://stackexchange.com/">
                     <div class="bookmark-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="9" />
-                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                            <path d="M11.5 3a17 17 0 0 0 0 18" />
-                            <path d="M12.5 3a17 17 0 0 1 0 18" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stack"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="12 4 4 8 12 12 20 8 12 4" />
+                            <polyline points="4 12 12 16 20 12" />
+                            <polyline points="4 16 12 20 20 16" />
+                        </svg>
                     </div>
                     <div class="bookmark-text">
-                        <div class="bookmark-title">Title 9</div>
-                        <div class="bookmark-address">example.com</div>
+                        <div class="bookmark-title">Stack Exchange</div>
+                        <div class="bookmark-address">stackexchange.com</div>
                     </div>
                 </a>
-                
+                <a class="bookmark-item" href="https://www.amazon.com/">
+                    <div class="bookmark-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-letter-a"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 20v-12a4 4 0 0 1 4 -4h2a4 4 0 0 1 4 4v12" />
+                            <line x1="7" y1="13" x2="17" y2="13" />
+                        </svg>
+                    </div>
+                    <div class="bookmark-text">
+                        <div class="bookmark-title">Amazon</div>
+                        <div class="bookmark-address">amazon.com</div>
+                    </div>
+                </a>
             </div>
         </div>
 
     </div>
-    
-    <footer>
+
+    <!-- <footer>
         <div class="icon" id="weather">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -192,7 +202,7 @@
                 <line x1="4" y1="18" x2="20" y2="18" />
               </svg>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="script.js"></script>
 </body>

@@ -1,7 +1,7 @@
 /* Elements */
-const searchBtn = document.getElementById('searchBtn');
-const settingsBtn = document.getElementById('settings');
-const weatherBtn = document.getElementById('weather');
+const searchBar = document.getElementById('searchbar');
+// const settingsBtn = document.getElementById('settings');
+// const weatherBtn = document.getElementById('weather');
 const message = document.getElementById('message');
 
 /* Functions */
@@ -18,24 +18,28 @@ function getGreeting(){
         msg = "good evening";
     }
 
-    msg += " sir/madam";
     return msg;
 }
 
+function search(event){
+    let key = event.key;
+    if (key == "Enter"){
+        event.preventDefault();
+        let text = searchBar.value;
+        let url = "https://duckduckgo.com/?q=" + text;
+        window.open(url, '_self');
+    }
+}
+
 /* Events */
-searchBtn.addEventListener('click', function(e){
-    e.preventDefault();
-    let query = document.getElementById('searchTerm');
-    console.log(query.value);
-});
 
-settingsBtn.addEventListener('click', function(){
-    alert('this does nothing');
-});
+// settingsBtn.addEventListener('click', function(){
+//     alert('this does nothing');
+// });
 
-weatherBtn.addEventListener('click', function(){
-    alert('this does nothing');
-});
+// weatherBtn.addEventListener('click', function(){
+//     alert('this does nothing');
+// });
 
 // run when document ready
 document.addEventListener('DOMContentLoaded', function(){
