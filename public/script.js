@@ -1,5 +1,5 @@
 /* Elements */
-const searchBtn = document.getElementById('searchBtn');
+const searchBar = document.getElementById('searchbar');
 const settingsBtn = document.getElementById('settings');
 const weatherBtn = document.getElementById('weather');
 const message = document.getElementById('message');
@@ -22,12 +22,17 @@ function getGreeting(){
     return msg;
 }
 
+function search(event){
+    let key = event.key;
+    if (key == "Enter"){
+        event.preventDefault();
+        let text = searchBar.value;
+        let url = "https://duckduckgo.com/?q=" + text;
+        window.open(url, '_self');
+    }
+}
+
 /* Events */
-searchBtn.addEventListener('click', function(e){
-    e.preventDefault();
-    let query = document.getElementById('searchTerm');
-    console.log(query.value);
-});
 
 settingsBtn.addEventListener('click', function(){
     alert('this does nothing');
