@@ -90,6 +90,7 @@ footer .icon:hover{
     color: var(--nord3);
     font-style: italic;
     font-size: 14px;
+    font-family: var(--font-family);
 }
 
 #searchbar::placeholder{
