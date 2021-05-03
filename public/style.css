@@ -2,7 +2,7 @@
 
 /* Variables */
 :root{
-    --font-family: Roboto, Helvetica, Arial, sans-serif;    
+    --font-family: 'Inter', Roboto, Helvetica, Arial, sans-serif;    
 }
 
 /* Reset some styles */
@@ -94,6 +94,7 @@ footer .icon:hover{
 
 #searchbar::placeholder{
     color: var(--nord3);
+    font-family: var(--font-family);
 }
 
 #bookmarks{
