@@ -33,3 +33,10 @@ jobs:
           BRANCH: gh-pages
           FOLDER: public
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Add CNAME
+        env: 
+          DOMAIN: start.statik.sh
+        run: |
+          echo $DOMAIN > CNAME
+        working-directory: ./
