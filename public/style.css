@@ -167,7 +167,7 @@ footer .icon:hover{
 /* Dark Mode */
 @media (prefers-color-scheme: dark){
     body{
-        background:var(--nord0);
+        background: #1B2A36;
         color: var(--nord4);
     }
 
