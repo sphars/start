@@ -36,6 +36,9 @@ jobs:
       
       - name: Add CNAME
         env: 
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: public
           DOMAIN: start.statik.sh
         run: |
           echo $DOMAIN > CNAME
