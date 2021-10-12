@@ -1,14 +1,14 @@
 # start
-A minimal browser start page, based on the Nord color scheme.
+A minimal browser start page, loosely based on the Nord color scheme.
 
 ## View Live Demo
-View at [https://spncrhrstn.github.io/start/](https://spncrhrstn.github.io/start/)
+View at [https://start.statik.sh/](https://start.statik.sh/)
 
 ### Status
 This is currently a work in progress.
 
 ### Features
-Yes, there will be features.
+TBD
 
 ### Deployment
 Upon pushing commits to the main branch, a GitHub Action is used to copy the `/public` subdirectory to the `gh-pages` branch.  
